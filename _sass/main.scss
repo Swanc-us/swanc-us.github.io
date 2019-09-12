@@ -1,0 +1,22 @@
+$backgroundColor: #0f090d;
+$bodyColor: #d13c3c;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+h1 {
+    font-size: 8rem;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.rainbow {
+  background-image: linear-gradient(to left, violet 0%, indigo 15%, blue 30%, green 45%, yellow 65%, orange 80%, red 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
