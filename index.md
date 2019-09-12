@@ -21,11 +21,34 @@ title: "Swanc"
     Swanc
   </h1>
   <div style="margin-top:48px">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPo3Kam4C8ms-3FvvmSR_XsV8NgDvDzLxnCToyGWMyLEzw9g/viewform?embedded=true" width="640" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </div>
+    <a href="#" onclick="toggle()">Contact Us</a>
+    <p></p>
+    <iframe id="contact-form" style="display: none" src="https://docs.google.com/forms/d/e/1FAIpQLSdPo3Kam4C8ms-3FvvmSR_XsV8NgDvDzLxnCToyGWMyLEzw9g/viewform?embedded=true" width="640" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  </div>
 </center>
-
-
 
 <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
 </svg>
+
+<script>
+  function toggle() {
+    var elem = document.getElementById('contact-form');
+	// If the element is visible, hide it
+	if (window.getComputedStyle(elem).display === 'block') {
+	  hide(elem);
+	  return;
+	}
+    
+	// Otherwise, show it
+	show(elem);
+    
+  };
+  // Show an element
+  var show = function (elem) {
+    elem.style.display = 'block';
+  };
+
+  // Hide an element
+  var hide = function (elem) {
+	elem.style.display = 'none';
+  };
+</script>
